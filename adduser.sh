@@ -26,15 +26,10 @@ useradd -u 76 -g=uid -c 'tcpdump' ${VAREMPTY} _tcpdump
 exit 0;
 
 # from 3.3 to 3.4
-groupadd -g 68	_isakmpd
-groupadd -g 59	_kdc
-groupadd -g 60	_kadmin
-groupadd -g 73	_syslogd
-
-useradd -u 59 -g _kdc -c 'Kerberos Server' ${VAREMPTY} _kdc
-useradd -u 60 -g _kadmin -c 'Kerberos Admin' ${VAREMPTY} _kadmin
-useradd -u 68 -g _isakmpd -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
-useradd -u 73 -g _syslogd -c 'Syslog Daemon' ${VAREMPTY} _syslogd
+useradd -u 59 -g=gid -c 'Kerberos Server' ${VAREMPTY} _kdc
+useradd -u 60 -g=gid -c 'Kerberos Admin' ${VAREMPTY} _kadmin
+useradd -u 68 -g=gid -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
+useradd -u 73 -g=gid -c 'Syslog Daemon' ${VAREMPTY} _syslogd
 
 # from 3.2 to 3.3
 groupadd -g 61	_lkm
