@@ -5,6 +5,9 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 3.2 to 3.3
+useradd -u 62 -g _spamd -c 'Spam daemon'	${VAREMPTY} _spamd
+
 # from 3.1 to 3.2
 useradd -u 27 -g sshd  -c 'sshd privsep'	${VAREMPTY} sshd
 useradd -u 28 -g _portmap  -c 'portmap'		${VAREMPTY} _portmap

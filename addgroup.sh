@@ -4,10 +4,10 @@
 
 # from 3.2 to 3.3
 groupadd -g 61 _lkm
+groupadd -g 62 _spamd
 groupadd -g 63 _radius
 groupadd -g 64  _token
 groupadd -g 65 _shadow
-groupadd -g 65 _spamd
 
 # from 3.1 to 3.2
 groupadd -g 66 crontab
