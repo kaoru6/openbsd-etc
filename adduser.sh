@@ -7,8 +7,10 @@ NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
 # from 3.6 to 3.7
 groupadd -g 84 _ftp
+groupadd -g 85 _ospfd
 
 useradd -u 84 -g 84 -c 'FTP Daemon' ${VAREMPTY} _ftp
+useradd -u 85 -g 85 -c 'OSPF Daemon' ${VAREMPTY} _ospfd
 
 # from 3.5 to 3.6
 groupadd -g 77 _dhcp
