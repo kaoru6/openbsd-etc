@@ -5,6 +5,10 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 3.4 to 3.5
+groupadd -g 74	_pflogd
+useradd -u 74 -g _pflogd -c 'pflogd privsep' ${VAREMPTY} _pflogd
+
 # from 3.3 to 3.4
 groupadd -g 68	_isakmpd
 groupadd -g 59	_kdc
