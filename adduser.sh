@@ -13,21 +13,21 @@ groupadd -g 80 _rbootd
 groupadd -g 81 _afs
 groupadd -g 82 _ppp
 
-useradd -u 77 -g _dhcp -c 'dhcp programs' ${VAREMPTY} _dhcp
-useradd -u 78 -g _mopd -c 'MOP Daemon' ${VAREMPTY} _mopd
-useradd -u 79 -g _tftpd -c 'TFTP Daemon' ${VAREMPTY} _tfpd
-useradd -u 80 -g _rbootd -c 'rbootd Daemon' ${VAREMPTY} _rbootd
-useradd -u 81 -g _afs -c 'afs Daemon' ${VAREMPTY} _afs
-useradd -u 82 -g _ppp -c 'PPP utilities' ${VAREMPTY} _afs
+useradd -u 77 -g 77 -c 'dhcp programs' ${VAREMPTY} _dhcp
+useradd -u 78 -g 78 -c 'MOP Daemon' ${VAREMPTY} _mopd
+useradd -u 79 -g 79 -c 'TFTP Daemon' ${VAREMPTY} _tfpd
+useradd -u 80 -g 80 -c 'rbootd Daemon' ${VAREMPTY} _rbootd
+useradd -u 81 -g 81 -c 'afs Daemon' ${VAREMPTY} _afs
+useradd -u 82 -g 82 -c 'PPP utilities' ${VAREMPTY} _ppp
 
 # from 3.4 to 3.5
 groupadd -g 74	_pflogd
 groupadd -g 75	_bgpd
 groupadd -g 76	_tcpdump
 
-useradd -u 74 -g _pflogd -c 'pflogd privsep' ${VAREMPTY} _pflogd
-useradd -u 75 -g _bgpd -c 'BGP Deamon' ${VAREMPTY} _bgpd
-useradd -u 76 -g _tcpdump -c 'tcpdump' ${VAREMPTY} _tcpdump
+useradd -u 74 -g 74 -c 'pflogd privsep' ${VAREMPTY} _pflogd
+useradd -u 75 -g 75 -c 'BGP Deamon' ${VAREMPTY} _bgpd
+useradd -u 76 -g 76 -c 'tcpdump' ${VAREMPTY} _tcpdump
 
 # from 3.3 to 3.4
 groupadd -g 68	_isakmpd
