@@ -5,7 +5,7 @@
 *default delete use-rel-suffix
 *default compress
 
-*default tag=OPENBSD_3_1
+*default tag=OPENBSD_3_3
 #*default tag=.
 
 #OpenBSD-src
