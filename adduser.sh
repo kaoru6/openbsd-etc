@@ -6,29 +6,47 @@ VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
 # from 3.6 to 3.7
-useradd -u 84 -g=uid -c 'FTP Daemon' ${VAREMPTY} _ftp
+groupadd -g 84 _ftp
 
+useradd -u 84 -g 84 -c 'FTP Daemon' ${VAREMPTY} _ftp
 
 # from 3.5 to 3.6
-useradd -u 77 -g=uid -c 'dhcp programs' ${VAREMPTY} _dhcp
-useradd -u 78 -g=uid -c 'MOP Daemon' ${VAREMPTY} _mopd
-useradd -u 79 -g=uid -c 'TFTP Daemon' ${VAREMPTY} _tfpd
-useradd -u 80 -g=uid -c 'rbootd Daemon' ${VAREMPTY} _rbootd
-useradd -u 81 -g=uid -c 'afs Daemon' ${VAREMPTY} _afs
-useradd -u 82 -g=uid -c 'PPP utilities' ${VAREMPTY} _ppp
-useradd -u 83 -g=uid -c 'NTP Daemon' ${VAREMPTY} _ntp
+groupadd -g 77 _dhcp
+groupadd -g 78 _mopd
+groupadd -g 79 _tftpd
+groupadd -g 80 _rbootd
+groupadd -g 81 _afs
+groupadd -g 82 _ppp
+groupadd -g 83 _ntp
+
+useradd -u 77 -g 77 -c 'dhcp programs' ${VAREMPTY} _dhcp
+useradd -u 78 -g 78 -c 'MOP Daemon' ${VAREMPTY} _mopd
+useradd -u 79 -g 79 -c 'TFTP Daemon' ${VAREMPTY} _tfpd
+useradd -u 80 -g 80 -c 'rbootd Daemon' ${VAREMPTY} _rbootd
+useradd -u 81 -g 81 -c 'afs Daemon' ${VAREMPTY} _afs
+useradd -u 82 -g 82 -c 'PPP utilities' ${VAREMPTY} _ppp
+useradd -u 83 -g 83 -c 'NTP Daemon' ${VAREMPTY} _ntp
 
 # from 3.4 to 3.5
-useradd -u 74 -g=uid -c 'pflogd privsep' ${VAREMPTY} _pflogd
-useradd -u 75 -g=uid -c 'BGP Deamon' ${VAREMPTY} _bgpd
-useradd -u 76 -g=uid -c 'tcpdump' ${VAREMPTY} _tcpdump
+groupadd -g 74	_pflogd
+groupadd -g 75	_bgpd
+groupadd -g 76	_tcpdump
+
+useradd -u 74 -g 74 -c 'pflogd privsep' ${VAREMPTY} _pflogd
+useradd -u 75 -g 75 -c 'BGP Deamon' ${VAREMPTY} _bgpd
+useradd -u 76 -g 76 -c 'tcpdump' ${VAREMPTY} _tcpdump
 
 
 # from 3.3 to 3.4
-useradd -u 59 -g=uid -c 'Kerberos Server' ${VAREMPTY} _kdc
-useradd -u 60 -g=uid -c 'Kerberos Admin' ${VAREMPTY} _kadmin
-useradd -u 68 -g=uid -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
-useradd -u 73 -g=uid -c 'Syslog Daemon' ${VAREMPTY} _syslogd
+groupadd -g 68	_isakmpd
+groupadd -g 59	_kdc
+groupadd -g 60	_kadmin
+groupadd -g 73	_syslogd
+
+useradd -u 59 -g _kdc -c 'Kerberos Server' ${VAREMPTY} _kdc
+useradd -u 60 -g _kadmin -c 'Kerberos Admin' ${VAREMPTY} _kadmin
+useradd -u 68 -g _isakmpd -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
+useradd -u 73 -g _syslogd -c 'Syslog Daemon' ${VAREMPTY} _syslogd
 
 exit 0;
 
