@@ -10,11 +10,15 @@ groupadd -g 77 _dhcp
 groupadd -g 78 _mopd
 groupadd -g 79 _tftpd
 groupadd -g 80 _rbootd
+groupadd -g 81 _afs
+groupadd -g 82 _ppp
 
 useradd -u 77 -g _dhcp -c 'dhcp programs' ${VAREMPTY} _dhcp
 useradd -u 78 -g _mopd -c 'MOP Daemon' ${VAREMPTY} _mopd
 useradd -u 79 -g _tftpd -c 'TFTP Daemon' ${VAREMPTY} _tfpd
 useradd -u 80 -g _rbootd -c 'rbootd Daemon' ${VAREMPTY} _rbootd
+useradd -u 81 -g _afs -c 'afs Daemon' ${VAREMPTY} _afs
+useradd -u 82 -g _ppp -c 'PPP utilities' ${VAREMPTY} _afs
 
 # from 3.4 to 3.5
 groupadd -g 74	_pflogd
