@@ -1,6 +1,6 @@
 #!/bin/sh
-VAREMPTY=' -d /var/empty -s /sbin/nologin '
-NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
+VAREMPTY='-d /var/empty -s /sbin/nologin'
+NONEXISTENT='-d /nonexistent -s /sbin/nologin'
 
 useradd -u 26 -g popa3d  -c 'POP3 server'	${VAREMPTY} popa3d
 useradd -u 27 -g sshd  -c 'sshd privsep'	${VAREMPTY} sshd
