@@ -7,7 +7,9 @@ NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
 # from 3.4 to 3.5
 groupadd -g 74	_pflogd
+groupadd -g 75	_bgpd
 useradd -u 74 -g _pflogd -c 'pflogd privsep' ${VAREMPTY} _pflogd
+useradd -u 75 -g _bgpd -c 'BGP Deamon' ${VAREMPTY} _bgpd
 
 # from 3.3 to 3.4
 groupadd -g 68	_isakmpd
