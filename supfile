@@ -6,8 +6,9 @@
 *default compress
 
 *default tag=OPENBSD_3_0
+#*default tag=.
 
 #OpenBSD-src
-OpenBSD-ports tag=.
+#OpenBSD-ports tag=.
 #OpenBSD-x11
 #OpenBSD-xf4
