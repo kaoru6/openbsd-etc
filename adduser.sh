@@ -29,6 +29,8 @@ useradd -u 74 -g 74 -c 'pflogd privsep' ${VAREMPTY} _pflogd
 useradd -u 75 -g 75 -c 'BGP Deamon' ${VAREMPTY} _bgpd
 useradd -u 76 -g 76 -c 'tcpdump' ${VAREMPTY} _tcpdump
 
+exit 0;
+
 # from 3.3 to 3.4
 groupadd -g 68	_isakmpd
 groupadd -g 59	_kdc
