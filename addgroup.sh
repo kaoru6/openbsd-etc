@@ -8,7 +8,7 @@ group add -g 30 _rstatd
 group add -g 32 _rusersd
 group add -g 33 _fingerd
 group add -g 34 _sshagnt
-group add -g 35 _11
+group add -g 35 _x11
 group add -g 66 crontab
 group add -g 71 proxy
 group add -g 72 authpf

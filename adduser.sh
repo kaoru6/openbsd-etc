@@ -9,7 +9,7 @@ useradd -u 29 -g _identd  -c 'identd'		${VAREMPTY} _identd
 useradd -u 30 -g _rstatd  -c 'rpc.rstatd'	${VAREMPTY}  _rstatd
 useradd -u 32 -g _rusersd  -c 'rpc.rusersd'	${VAREMPTY} _rusersd
 useradd -u 33 -g _fingerd  -c 'fingerd'		${VAREMPTY} _fingerd
-useradd -u 35 -g _11  -c 'X server'		${VAREMPTY} _fingerd
+useradd -u 35 -g _x11  -c 'X server'		${VAREMPTY} _x11
 
 useradd -u 25 -g smmsp  -c 'Sendmail Message Submission Program'	${NONEXISTENT} smmsp
 useradd -u 71 -g proxy  -c 'Proxy Services' ${NONEXISTENT} proxy
