@@ -12,6 +12,7 @@ groupadd -g 79 _tftpd
 groupadd -g 80 _rbootd
 groupadd -g 81 _afs
 groupadd -g 82 _ppp
+groupadd -g 83 _ntp
 
 useradd -u 77 -g 77 -c 'dhcp programs' ${VAREMPTY} _dhcp
 useradd -u 78 -g 78 -c 'MOP Daemon' ${VAREMPTY} _mopd
@@ -19,6 +20,7 @@ useradd -u 79 -g 79 -c 'TFTP Daemon' ${VAREMPTY} _tfpd
 useradd -u 80 -g 80 -c 'rbootd Daemon' ${VAREMPTY} _rbootd
 useradd -u 81 -g 81 -c 'afs Daemon' ${VAREMPTY} _afs
 useradd -u 82 -g 82 -c 'PPP utilities' ${VAREMPTY} _ppp
+useradd -u 83 -g 83 -c 'NTP Daemon' ${VAREMPTY} _ntp
 
 # from 3.4 to 3.5
 groupadd -g 74	_pflogd
