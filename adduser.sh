@@ -15,6 +15,3 @@ useradd -u 35 -g _x11  -c 'X server'		${VAREMPTY} _x11
 useradd -u 25 -g smmsp  -c 'Sendmail Message Submission Program'	${NONEXISTENT} smmsp
 useradd -u 26 -g popa3d  -c 'POP3 server'	${VAREMPTY} popa3d
 useradd -u 71 -g proxy  -c 'Proxy Services' ${NONEXISTENT} proxy
-
-# from 2.3 to 2.4
-#useradd -u 70 -g named  -c 'BIND Daemon' -d /var/named -s /sbin/nologin named

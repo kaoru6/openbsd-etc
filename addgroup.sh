@@ -20,6 +20,3 @@ group add -g 26 popa3d
 
 # from 2.8 to 2.9
 group add -g 11 auth
-
-# from 2.3 to 2.4
-#group add -g 70 named
