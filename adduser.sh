@@ -23,13 +23,14 @@ useradd -u 74 -g=uid -c 'pflogd privsep' ${VAREMPTY} _pflogd
 useradd -u 75 -g=uid -c 'BGP Deamon' ${VAREMPTY} _bgpd
 useradd -u 76 -g=uid -c 'tcpdump' ${VAREMPTY} _tcpdump
 
-exit 0;
 
 # from 3.3 to 3.4
-useradd -u 59 -g=gid -c 'Kerberos Server' ${VAREMPTY} _kdc
-useradd -u 60 -g=gid -c 'Kerberos Admin' ${VAREMPTY} _kadmin
-useradd -u 68 -g=gid -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
-useradd -u 73 -g=gid -c 'Syslog Daemon' ${VAREMPTY} _syslogd
+useradd -u 59 -g=uid -c 'Kerberos Server' ${VAREMPTY} _kdc
+useradd -u 60 -g=uid -c 'Kerberos Admin' ${VAREMPTY} _kadmin
+useradd -u 68 -g=uid -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
+useradd -u 73 -g=uid -c 'Syslog Daemon' ${VAREMPTY} _syslogd
+
+exit 0;
 
 # from 3.2 to 3.3
 groupadd -g 61	_lkm
