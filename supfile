@@ -1,0 +1,14 @@
+*default host=cvsup.usa.OpenBSD.org
+*default base=/var
+*default prefix=/export
+*default release=cvs
+*default delete use-rel-suffix
+*default compress
+
+*default tag=OPENBSD_2_8
+
+#OpenBSD-src
+#OpenBSD-ports tag=.
+
+#OpenBSD-x11
+#OpenBSD-xf4
