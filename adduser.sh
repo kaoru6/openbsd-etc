@@ -1,4 +1,7 @@
 #!/bin/sh
+
+[ `uname -s` != OpenBSD ] && exit
+
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 

@@ -3,9 +3,9 @@
 [ `uname -s` != 'OpenBSD' ] && exit
 
 # from 3.2 to 3.3
-groupadd _radius
-groupadd  _token
-groupadd _shadow
+groupadd -g 63 _radius
+groupadd -g 64  _token
+groupadd -g 65 _shadow
 
 # from 3.1 to 3.2
 groupadd -g 66 crontab
