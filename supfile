@@ -1,4 +1,4 @@
-*default host=cvsup.usa.OpenBSD.org
+*default host=cvsup.jp.OpenBSD.org
 *default base=/var
 *default prefix=/usr
 *default release=cvs
@@ -7,9 +7,7 @@
 
 *default tag=OPENBSD_3_0
 
-OpenBSD-src
+#OpenBSD-src
 OpenBSD-ports tag=.
-#OpenBSD-ports
-
 #OpenBSD-x11
 #OpenBSD-xf4
