@@ -5,6 +5,17 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 3.5 to 3.6
+groupadd -g 77 _dhcp
+groupadd -g 78 _mopd
+groupadd -g 79 _tftpd
+groupadd -g 80 _rbootd
+
+useradd -u 77 -g _dhcp -c 'dhcp programs' ${VAREMPTY} _dhcp
+useradd -u 78 -g _mopd -c 'MOP Daemon' ${VAREMPTY} _mopd
+useradd -u 79 -g _tftpd -c 'TFTP Daemon' ${VAREMPTY} _tfpd
+useradd -u 80 -g _rbootd -c 'rbootd Daemon' ${VAREMPTY} _rbootd
+
 # from 3.4 to 3.5
 groupadd -g 74	_pflogd
 groupadd -g 75	_bgpd
