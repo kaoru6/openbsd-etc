@@ -5,6 +5,11 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 3.7 to 3.8
+groupadd -g 86 _hostapd
+
+useradd -u 86 -g 86 -c 'HostAP Daemon' ${VAREMPTY} _hostapd
+
 # from 3.6 to 3.7
 groupadd -g 84 _ftp
 groupadd -g 85 _ospfd
