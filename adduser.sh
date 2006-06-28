@@ -5,6 +5,10 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 3.9 to 4.0
+groupadd -g 87 _dvmrpd
+useradd -u 87 -g 87 -c"DVMRP Daemon" ${VAREMPTY} _dvmrpd
+
 # from 3.7 to 3.8
 groupadd -g 86 _hostapd
 
