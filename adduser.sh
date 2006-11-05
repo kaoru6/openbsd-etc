@@ -5,6 +5,10 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 4.0 to 4.1
+groupadd -g 88 _ripd
+useradd -u 88 -g 88 -c 'RIP Daemon' ${VAREMPTY} _ripd
+
 # from 3.9 to 4.0
 groupadd -g 87 _dvmrpd
 useradd -u 87 -g 87 -c"DVMRP Daemon" ${VAREMPTY} _dvmrpd
