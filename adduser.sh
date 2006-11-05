@@ -15,7 +15,6 @@ useradd -u 87 -g 87 -c 'DVMRP Daemon' ${VAREMPTY} _dvmrpd
 
 # from 3.7 to 3.8
 groupadd -g 86 _hostapd
-
 useradd -u 86 -g 86 -c 'HostAP Daemon' ${VAREMPTY} _hostapd
 
 # from 3.6 to 3.7
