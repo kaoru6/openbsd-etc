@@ -7,7 +7,9 @@ NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
 # from 4.0 to 4.1
 groupadd -g 88 _ripd
+groupadd -g 89 _hoststated
 useradd -u 88 -g 88 -c 'RIP Daemon' ${VAREMPTY} _ripd
+useradd -u 89 -g 89 -c 'HostState Daemon' ${VAREMPTY} _hoststated
 
 # from 3.9 to 4.0
 groupadd -g 87 _dvmrpd
