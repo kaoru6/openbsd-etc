@@ -5,6 +5,10 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 4.2 to 4.3
+groupadd -g 90 _ospf6d
+useradd -u 90 -g 90 -c 'OSPF6 Daemon' ${VAREMPTY} _ospf6d
+
 # from 4.0 to 4.1
 groupadd -g 88 _ripd
 groupadd -g 89 _hoststated
