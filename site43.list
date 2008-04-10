@@ -1,0 +1,5 @@
+./usr/bin/slogin
+./usr/bin/ssh
+./usr/bin/ssh-keyscan
+./usr/libexec/ssh-keysign
+./usr/sbin/sshd
