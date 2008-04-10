@@ -7,13 +7,15 @@ NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
 # from 4.2 to 4.3
 groupadd -g 90 _ospf6d
+groupadd -g 91 _snmpd
 useradd -u 90 -g 90 -c 'OSPF6 Daemon' ${VAREMPTY} _ospf6d
+useradd -u 91 -g 91 -c 'SNMP Daemon' ${VAREMPTY} _snmpd
 
 # from 4.0 to 4.1
 groupadd -g 88 _ripd
-groupadd -g 89 _hoststated
+groupadd -g 89 _relayd
 useradd -u 88 -g 88 -c 'RIP Daemon' ${VAREMPTY} _ripd
-useradd -u 89 -g 89 -c 'HostState Daemon' ${VAREMPTY} _hoststated
+useradd -u 89 -g 89 -c 'Relay Daemon' ${VAREMPTY} _relayd
 
 # from 3.9 to 4.0
 groupadd -g 87 _dvmrpd

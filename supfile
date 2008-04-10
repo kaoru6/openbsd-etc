@@ -5,10 +5,10 @@
 *default delete use-rel-suffix
 *default compress
 
-*default tag=OPENBSD_3_3
+*default tag=OPENBSD_4_3
 #*default tag=.
 
 #OpenBSD-src
-#OpenBSD-ports tag=.
+#OpenBSD-ports
 #OpenBSD-x11
 #OpenBSD-xf4
