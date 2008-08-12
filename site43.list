@@ -3,3 +3,4 @@
 ./usr/bin/ssh-keyscan
 ./usr/libexec/ssh-keysign
 ./usr/sbin/sshd
+./usr/sbin/bgpd
