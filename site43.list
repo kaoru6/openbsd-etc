@@ -3,9 +3,10 @@
 ./usr/bin/ssh-keyscan
 ./usr/libexec/ssh-keysign
 ./usr/sbin/sshd
+
 ./usr/sbin/bgpd
 
-./usr/lib/libc.a differ
+./usr/lib/libc.a
 ./usr/lib/libc.so.43.0
 ./usr/lib/libc_p.a
 ./usr/lib/libc_pic.a
