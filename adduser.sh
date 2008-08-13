@@ -5,6 +5,10 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 4.3 to 4.4
+groupadd -g 92 _rtadvd
+useradd -u 92 -g 92 -c 'IPv6 Router Advertisement Daemon' ${VAREMPTY} _rtadvd
+
 # from 4.2 to 4.3
 groupadd -g 90 _ospf6d
 groupadd -g 91 _snmpd
