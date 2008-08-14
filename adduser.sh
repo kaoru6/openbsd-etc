@@ -9,17 +9,20 @@ NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 groupadd -g 92 _rtadvd
 useradd -u 92 -g 92 -c 'IPv6 Router Advertisement Daemon' ${VAREMPTY} _rtadvd
 
+
 # from 4.2 to 4.3
 groupadd -g 90 _ospf6d
 groupadd -g 91 _snmpd
 useradd -u 90 -g 90 -c 'OSPF6 Daemon' ${VAREMPTY} _ospf6d
 useradd -u 91 -g 91 -c 'SNMP Daemon' ${VAREMPTY} _snmpd
 
+
 # from 4.0 to 4.1
 groupadd -g 88 _ripd
 groupadd -g 89 _relayd
 useradd -u 88 -g 88 -c 'RIP Daemon' ${VAREMPTY} _ripd
 useradd -u 89 -g 89 -c 'Relay Daemon' ${VAREMPTY} _relayd
+
 
 # from 3.9 to 4.0
 groupadd -g 87 _dvmrpd
@@ -29,12 +32,16 @@ useradd -u 87 -g 87 -c 'DVMRP Daemon' ${VAREMPTY} _dvmrpd
 groupadd -g 86 _hostapd
 useradd -u 86 -g 86 -c 'HostAP Daemon' ${VAREMPTY} _hostapd
 
+exit 0;
+
+
 # from 3.6 to 3.7
 groupadd -g 84 _ftp
 groupadd -g 85 _ospfd
 
 useradd -u 84 -g 84 -c 'FTP Daemon' ${VAREMPTY} _ftp
 useradd -u 85 -g 85 -c 'OSPF Daemon' ${VAREMPTY} _ospfd
+
 
 # from 3.5 to 3.6
 groupadd -g 77 _dhcp
@@ -52,6 +59,7 @@ useradd -u 80 -g 80 -c 'rbootd Daemon' ${VAREMPTY} _rbootd
 useradd -u 81 -g 81 -c 'afs Daemon' ${VAREMPTY} _afs
 useradd -u 82 -g 82 -c 'PPP utilities' ${VAREMPTY} _ppp
 useradd -u 83 -g 83 -c 'NTP Daemon' ${VAREMPTY} _ntp
+
 
 # from 3.4 to 3.5
 groupadd -g 74	_pflogd
@@ -74,7 +82,6 @@ useradd -u 60 -g _kadmin -c 'Kerberos Admin' ${VAREMPTY} _kadmin
 useradd -u 68 -g _isakmpd -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
 useradd -u 73 -g _syslogd -c 'Syslog Daemon' ${VAREMPTY} _syslogd
 
-exit 0;
 
 # from 3.2 to 3.3
 groupadd -g 61	_lkm
@@ -106,6 +113,7 @@ useradd -u 30 -g _rstatd  -c 'rpc.rstatd'	${VAREMPTY} _rstatd
 useradd -u 32 -g _rusersd  -c 'rpc.rusersd'	${VAREMPTY} _rusersd
 useradd -u 33 -g _fingerd  -c 'fingerd'		${VAREMPTY} _fingerd
 useradd -u 35 -g _x11  -c 'X server'		${VAREMPTY} _x11
+
 
 # from 2.9 to 3.0
 groupadd -g 71	proxy
