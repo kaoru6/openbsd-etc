@@ -11,6 +11,7 @@
 ./usr/lib/libc_p.a
 ./usr/lib/libc_pic.a
 ./usr/libdata/lint/llib-lc.ln
+./var/db/libc.tags
 
 ./bin/chgrp
 ./bin/chmod
