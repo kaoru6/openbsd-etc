@@ -7,7 +7,9 @@ NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
 # from 4.3 to 4.4
 groupadd -g 92 _rtadvd
+groupadd -g 93 _ypldap
 useradd -u 92 -g 92 -c 'IPv6 Router Advertisement Daemon' ${VAREMPTY} _rtadvd
+useradd -u 93 -g 93 -c 'YP to LDAP Daemon' ${VAREMPTY} _ypldap
 
 
 # from 4.2 to 4.3
