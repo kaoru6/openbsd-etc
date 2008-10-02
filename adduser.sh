@@ -13,12 +13,12 @@ useradd -u 93 -g 93 -c 'YP to LDAP Daemon' ${VAREMPTY} _ypldap
 
 
 # from 4.2 to 4.3
+groupadd -g 89 _relayd
 groupadd -g 90 _ospf6d
 groupadd -g 91 _snmpd
-groupadd -g 89 _relayd
+useradd -u 89 -g 89 -c 'Relay Daemon' ${VAREMPTY} _relayd
 useradd -u 90 -g 90 -c 'OSPF6 Daemon' ${VAREMPTY} _ospf6d
 useradd -u 91 -g 91 -c 'SNMP Daemon' ${VAREMPTY} _snmpd
-useradd -u 89 -g 89 -c 'Relay Daemon' ${VAREMPTY} _relayd
 
 
 # from 4.0 to 4.1
