@@ -1,2 +1,4 @@
 ./usr/lib/apache/modules/libproxy.so
 ./usr/sbin/httpd
+
+./usr/sbin/dhcpd
