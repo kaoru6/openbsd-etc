@@ -5,6 +5,11 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 4.4 to 4.5
+groupadd -g 94 _btd
+useradd -u 94 -g 94 -c 'Bluetooth Daemon' ${VAREMPTY} _btd
+
+
 # from 4.3 to 4.4
 groupadd -g 92 _rtadvd
 groupadd -g 93 _ypldap
