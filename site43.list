@@ -63,3 +63,8 @@
 ./usr/sbin/rndc
 ./usr/sbin/rndc-confgen
 ./usr/share/doc/html/bind/Bv9ARM.ch06.html
+
+./usr/lib/libssl.a
+./usr/lib/libssl.so.11.0
+./usr/lib/libssl_p.a
+./usr/lib/libssl_pic.a

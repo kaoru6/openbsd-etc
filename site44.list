@@ -2,3 +2,8 @@
 ./usr/sbin/httpd
 
 ./usr/sbin/dhcpd
+
+./usr/lib/libssl.a
+./usr/lib/libssl.so.11.0
+./usr/lib/libssl_p.a
+./usr/lib/libssl_pic.a
