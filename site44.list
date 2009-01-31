@@ -17,3 +17,5 @@
 ./usr/sbin/nslookup
 ./usr/sbin/nsupdate
 ./usr/sbin/rndc-confgen
+
+./usr/sbin/bgpd
