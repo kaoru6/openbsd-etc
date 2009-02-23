@@ -69,3 +69,5 @@
 ./usr/lib/libssl_p.a
 ./usr/lib/libssl_pic.a
 
+./usr/bin/sudo
+./usr/bin/sudoedit

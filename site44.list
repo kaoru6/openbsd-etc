@@ -19,3 +19,6 @@
 ./usr/sbin/rndc-confgen
 
 ./usr/sbin/bgpd
+
+./usr/bin/sudo
+./usr/bin/sudoedit
