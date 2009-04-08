@@ -71,3 +71,15 @@
 
 ./usr/bin/sudo
 ./usr/bin/sudoedit
+
+./usr/include/openssl/asn1.h
+./usr/lib/libcrypto.a
+./usr/lib/libcrypto.so.13.0
+./usr/lib/libcrypto_p.a
+./usr/lib/libcrypto_pic.a
+./usr/lib/libssl.a
+./usr/lib/libssl_p.a
+./usr/lib/libssl_pic.a
+./sbin/isakmpd
+./sbin/mount_vnd
+./sbin/vnconfig
