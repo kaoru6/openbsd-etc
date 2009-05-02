@@ -40,6 +40,7 @@ useradd -u 89 -g 89 -c 'Relay Daemon' ${VAREMPTY} _relayd
 useradd -u 90 -g 90 -c 'OSPF6 Daemon' ${VAREMPTY} _ospf6d
 useradd -u 91 -g 91 -c 'SNMP Daemon' ${VAREMPTY} _snmpd
 
+exit 0;
 
 # from 4.0 to 4.1
 groupadd -g 88 _ripd
@@ -51,11 +52,10 @@ useradd -u 88 -g 88 -c 'RIP Daemon' ${VAREMPTY} _ripd
 groupadd -g 87 _dvmrpd
 useradd -u 87 -g 87 -c 'DVMRP Daemon' ${VAREMPTY} _dvmrpd
 
+
 # from 3.7 to 3.8
 groupadd -g 86 _hostapd
 useradd -u 86 -g 86 -c 'HostAP Daemon' ${VAREMPTY} _hostapd
-
-exit 0;
 
 
 # from 3.6 to 3.7
