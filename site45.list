@@ -10,4 +10,4 @@
 ./sbin/mount_vnd
 ./sbin/vnconfig
 
-./usr/sbin/aucat
+./usr/bin/aucat
