@@ -5,10 +5,18 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# typo fix
+usermod -c 'BGP Daemon' _bgpd
+usermod -c 'tcpdump privsep' _tcpdump
+usermod -c 'Spam Daemon' _spamd
+usermod -c 'POP3 Server' popa3d
+usermod -c 'DHCP programs' _dhcp
+
 # from 4.4 to 4.5
 groupadd -g 94 _btd
 useradd -u 94 -g 94 -c 'Bluetooth Daemon' ${VAREMPTY} _btd
 
+usermod -c 'Unprivileged user for NFS' nobody
 
 # from 4.3 to 4.4
 groupadd -g 92 _rtadvd
@@ -60,7 +68,7 @@ groupadd -g 81 _afs
 groupadd -g 82 _ppp
 groupadd -g 83 _ntp
 
-useradd -u 77 -g 77 -c 'dhcp programs' ${VAREMPTY} _dhcp
+useradd -u 77 -g 77 -c 'DHCP programs' ${VAREMPTY} _dhcp
 useradd -u 78 -g 78 -c 'MOP Daemon' ${VAREMPTY} _mopd
 useradd -u 79 -g 79 -c 'TFTP Daemon' ${VAREMPTY} _tftpd
 useradd -u 80 -g 80 -c 'rbootd Daemon' ${VAREMPTY} _rbootd
@@ -75,8 +83,8 @@ groupadd -g 75	_bgpd
 groupadd -g 76	_tcpdump
 
 useradd -u 74 -g 74 -c 'pflogd privsep' ${VAREMPTY} _pflogd
-useradd -u 75 -g 75 -c 'BGP Deamon' ${VAREMPTY} _bgpd
-useradd -u 76 -g 76 -c 'tcpdump' ${VAREMPTY} _tcpdump
+useradd -u 75 -g 75 -c 'BGP Daemon' ${VAREMPTY} _bgpd
+useradd -u 76 -g 76 -c 'tcpdump privsep' ${VAREMPTY} _tcpdump
 
 
 # from 3.3 to 3.4
@@ -98,7 +106,7 @@ groupadd -g 63	_radius
 groupadd -g 64	_token
 groupadd -g 65	_shadow
 
-useradd -u 62 -g _spamd -c 'Spam daemon'	${VAREMPTY} _spamd
+useradd -u 62 -g _spamd -c 'Spam Daemon'	${VAREMPTY} _spamd
 
 
 # from 3.1 to 3.2
@@ -129,7 +137,7 @@ groupadd -g 25	smmsp
 groupadd -g 26	popa3d
 
 useradd -u 25 -g smmsp  -c 'Sendmail Message Submission Program'	${NONEXISTENT} smmsp
-useradd -u 26 -g popa3d  -c 'POP3 server'	${VAREMPTY} popa3d
+useradd -u 26 -g popa3d  -c 'POP3 Server'	${VAREMPTY} popa3d
 useradd -u 71 -g proxy  -c 'Proxy Services' ${NONEXISTENT} proxy
 
 
