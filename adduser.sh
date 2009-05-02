@@ -6,10 +6,12 @@ VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
 # typo fix
+usermod -c 'POP3 Server' popa3d
+usermod -c 'X Server' _x11
+usermod -c 'Spam Daemon' _spamd
+usermod -c 'HTTP Server' www
 usermod -c 'BGP Daemon' _bgpd
 usermod -c 'tcpdump privsep' _tcpdump
-usermod -c 'Spam Daemon' _spamd
-usermod -c 'POP3 Server' popa3d
 usermod -c 'DHCP programs' _dhcp
 
 
@@ -133,7 +135,7 @@ useradd -u 29 -g _identd  -c 'identd'		${VAREMPTY} _identd
 useradd -u 30 -g _rstatd  -c 'rpc.rstatd'	${VAREMPTY} _rstatd
 useradd -u 32 -g _rusersd  -c 'rpc.rusersd'	${VAREMPTY} _rusersd
 useradd -u 33 -g _fingerd  -c 'fingerd'		${VAREMPTY} _fingerd
-useradd -u 35 -g _x11  -c 'X server'		${VAREMPTY} _x11
+useradd -u 35 -g _x11  -c 'X Server'		${VAREMPTY} _x11
 
 
 # from 2.9 to 3.0
