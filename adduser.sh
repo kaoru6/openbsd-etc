@@ -12,6 +12,11 @@ usermod -c 'Spam Daemon' _spamd
 usermod -c 'POP3 Server' popa3d
 usermod -c 'DHCP programs' _dhcp
 
+
+# from 4.5 to 4.6
+groupadd -g 95 _smtpd
+useradd -u 95 -g 95 -c 'SMTP Daemon' ${VAREMPTY} _smtpd
+
 # from 4.4 to 4.5
 groupadd -g 94 _btd
 useradd -u 94 -g 94 -c 'Bluetooth Daemon' ${VAREMPTY} _btd
