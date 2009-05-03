@@ -13,6 +13,7 @@ usermod -c 'HTTP Server' www
 usermod -c 'BGP Daemon' _bgpd
 usermod -c 'tcpdump privsep' _tcpdump
 usermod -c 'DHCP programs' _dhcp
+usermod -c 'Kerberos Admin Server' _kadmin
 
 
 # from 4.5 to 4.6
@@ -101,7 +102,7 @@ groupadd -g 60	_kadmin
 groupadd -g 73	_syslogd
 
 useradd -u 59 -g _kdc -c 'Kerberos Server' ${VAREMPTY} _kdc
-useradd -u 60 -g _kadmin -c 'Kerberos Admin' ${VAREMPTY} _kadmin
+useradd -u 60 -g _kadmin -c 'Kerberos Admin Server' ${VAREMPTY} _kadmin
 useradd -u 68 -g _isakmpd -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
 useradd -u 73 -g _syslogd -c 'Syslog Daemon' ${VAREMPTY} _syslogd
 
