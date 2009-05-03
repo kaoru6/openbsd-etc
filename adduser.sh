@@ -9,11 +9,11 @@ NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 usermod -c 'POP3 Server' popa3d
 usermod -c 'X Server' _x11
 usermod -c 'Spam Daemon' _spamd
+usermod -c 'Kerberos Admin Server' _kadmin
 usermod -c 'HTTP Server' www
 usermod -c 'BGP Daemon' _bgpd
 usermod -c 'tcpdump privsep' _tcpdump
 usermod -c 'DHCP programs' _dhcp
-usermod -c 'Kerberos Admin Server' _kadmin
 
 
 # from 4.5 to 4.6
