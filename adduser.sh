@@ -20,6 +20,10 @@ usermod -c 'DHCP programs' _dhcp
 groupadd -g 95 _smtpd
 useradd -u 95 -g 95 -c 'SMTP Daemon' ${VAREMPTY} _smtpd
 
+groupadd -g 96 _rwalld
+useradd -u 96 -g 96 -c 'rpc.rwalld' ${VAREMPTY} _rwalld
+
+
 # from 4.4 to 4.5
 groupadd -g 94 _btd
 useradd -u 94 -g 94 -c 'Bluetooth Daemon' ${VAREMPTY} _btd
