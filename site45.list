@@ -11,3 +11,5 @@
 ./sbin/vnconfig
 
 ./usr/bin/aucat
+
+./usr/sbin/ospfd
