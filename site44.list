@@ -34,3 +34,5 @@
 ./sbin/isakmpd
 ./sbin/mount_vnd
 ./sbin/vnconfig
+
+./usr/sbin/named

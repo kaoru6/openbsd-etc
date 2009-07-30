@@ -15,3 +15,5 @@
 ./usr/sbin/ospfd
 
 ./usr/libdata/perl5/i386-openbsd/5.10.0/auto/Compress/Raw/Zlib/Zlib.so
+
+./usr/sbin/named
