@@ -49,7 +49,6 @@
 ./usr/lib/libkrb5.so.16.0
 ./usr/lib/libkrb5_p.a
 ./usr/lib/libkrb5_pic.a
-./usr/libexec/kdc
 
 ./usr/lib/libssl.a
 ./usr/lib/libssl.so.14.0

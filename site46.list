@@ -34,4 +34,3 @@
 ./usr/lib/libhdb.a
 ./usr/lib/libkafs.a
 ./usr/lib/libkrb5.a
-./usr/libexec/kdc
