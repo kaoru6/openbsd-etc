@@ -15,6 +15,18 @@ usermod -c 'BGP Daemon' _bgpd
 usermod -c 'tcpdump privsep' _tcpdump
 usermod -c 'DHCP programs' _dhcp
 
+# from 4.7 to 4.8
+groupadd -g 99 _sndio
+useradd -u 99 -g 99 -c 'sndio privsep' ${VAREMPTY} _sndio
+
+
+# from 4.6 to 4.7
+groupadd -g 98 _ldpd
+useradd -u 98 -g 98 -c 'LDP Daemon' ${VAREMPTY} _ldpd
+
+groupadd -g 97 _nsd
+useradd -u 97 -g 97 -c 'NSD Daemon' ${VAREMPTY} _nsd
+
 
 # from 4.5 to 4.6
 groupadd -g 95 _smtpd
