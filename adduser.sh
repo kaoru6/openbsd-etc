@@ -16,7 +16,7 @@ usermod -c 'tcpdump privsep' _tcpdump
 usermod -c 'DHCP programs' _dhcp
 
 # from 4.7 to 4.8
-groupadd -g 101 _ldapd
+groupadd -g 101 _iked
 useradd -u 101 -g 101 -c 'IKEv2 Daemon' ${VAREMPTY} _iked
 
 groupadd -g 100 _ldapd
