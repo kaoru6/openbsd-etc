@@ -54,3 +54,5 @@
 ./usr/lib/libssl.so.14.0
 ./usr/lib/libssl_p.a
 ./usr/lib/libssl_pic.a
+
+./sbin/fdisk
