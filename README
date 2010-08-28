@@ -1,0 +1,16 @@
+OpenBSD sysadmin shell-script & sample-config
+
+* adduser.sh
+
+  Add system user & group shell script.
+
+  % sudo sh adduesr.sh
+
+
+* siteXX.list
+
+  the Erratta touched file lists (i386)
+
+  % make build
+  % cd /
+  % sudo tar czf /var/tmp/siteXX.tgz `sort -u /PATH/TO/siteXX.list`
