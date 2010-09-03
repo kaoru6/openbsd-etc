@@ -5,16 +5,6 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
-# typo fix
-usermod -c 'POP3 Server' popa3d
-usermod -c 'X Server' _x11
-usermod -c 'Spam Daemon' _spamd
-usermod -c 'Kerberos Admin Server' _kadmin
-usermod -c 'HTTP Server' www
-usermod -c 'BGP Daemon' _bgpd
-usermod -c 'tcpdump privsep' _tcpdump
-usermod -c 'DHCP programs' _dhcp
-
 # from 4.7 to 4.8
 groupadd -g 101 _iked
 useradd -u 101 -g 101 -c 'IKEv2 Daemon' ${VAREMPTY} _iked
@@ -64,6 +54,16 @@ useradd -u 90 -g 90 -c 'OSPF6 Daemon' ${VAREMPTY} _ospf6d
 useradd -u 91 -g 91 -c 'SNMP Daemon' ${VAREMPTY} _snmpd
 
 exit 0;
+
+# typo fix
+usermod -c 'POP3 Server' popa3d
+usermod -c 'X Server' _x11
+usermod -c 'Spam Daemon' _spamd
+usermod -c 'Kerberos Admin Server' _kadmin
+usermod -c 'HTTP Server' www
+usermod -c 'BGP Daemon' _bgpd
+usermod -c 'tcpdump privsep' _tcpdump
+usermod -c 'DHCP programs' _dhcp
 
 # from 4.0 to 4.1
 groupadd -g 88 _ripd
