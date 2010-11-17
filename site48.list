@@ -1,3 +1,5 @@
 ./usr/bin/tmux
 
 ./usr/sbin/relayd
+
+./usr/sbin/bgpd
