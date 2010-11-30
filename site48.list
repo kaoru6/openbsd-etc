@@ -3,3 +3,8 @@
 ./usr/sbin/relayd
 
 ./usr/sbin/bgpd
+
+./usr/lib/libssl.a
+./usr/lib/libssl.so.15.1
+./usr/lib/libssl_p.a
+./usr/lib/libssl_pic.a
