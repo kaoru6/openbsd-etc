@@ -23,3 +23,11 @@
 ./usr/lib/libkrb5.a
 
 ./usr/sbin/relayd
+
+./usr/sbin/dig
+./usr/sbin/dnssec-signzone
+./usr/sbin/host
+./usr/sbin/named
+./usr/sbin/named-checkzone
+./usr/sbin/nslookup
+./usr/sbin/nsupdate
