@@ -6,6 +6,8 @@ VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
 # from 4.7 to 4.8
+usermod -c 'Binaries Commands and Source' bin
+
 groupadd -g 101 _iked
 useradd -u 101 -g 101 -c 'IKEv2 Daemon' ${VAREMPTY} _iked
 
