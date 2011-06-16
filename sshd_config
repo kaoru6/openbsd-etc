@@ -14,7 +14,7 @@
 #ListenAddress ::
 
 # The default requires explicit activation of protocol 1
-#Protocol 2
+Protocol 2
 
 # HostKey for protocol version 1
 #HostKey /etc/ssh/ssh_host_key
@@ -35,7 +35,7 @@
 # Authentication:
 
 #LoginGraceTime 2m
-#PermitRootLogin yes
+PermitRootLogin no
 #StrictModes yes
 #MaxAuthTries 6
 #MaxSessions 10
@@ -58,20 +58,20 @@ AuthorizedKeysFile	.ssh/authorized_keys
 #IgnoreRhosts yes
 
 # To disable tunneled clear text passwords, change to no here!
-#PasswordAuthentication yes
-#PermitEmptyPasswords no
+PasswordAuthentication no
+PermitEmptyPasswords no
 
 # Change to no to disable s/key passwords
-#ChallengeResponseAuthentication yes
+ChallengeResponseAuthentication no
 
 # Kerberos options
-#KerberosAuthentication no
+KerberosAuthentication no
 #KerberosOrLocalPasswd yes
 #KerberosTicketCleanup yes
 #KerberosGetAFSToken no
 
 # GSSAPI options
-#GSSAPIAuthentication no
+GSSAPIAuthentication no
 #GSSAPICleanupCredentials yes
 
 #AllowAgentForwarding yes
@@ -83,17 +83,20 @@ AuthorizedKeysFile	.ssh/authorized_keys
 #PrintMotd yes
 #PrintLastLog yes
 #TCPKeepAlive yes
-#UseLogin no
-#UsePrivilegeSeparation yes
+UseLogin no
+UsePrivilegeSeparation yes
 #PermitUserEnvironment no
-#Compression delayed
-#ClientAliveInterval 0
-#ClientAliveCountMax 3
-#UseDNS yes
+Compression delayed
+ClientAliveInterval 180
+ClientAliveCountMax 3
+UseDNS no
 #PidFile /var/run/sshd.pid
 #MaxStartups 10
 #PermitTunnel no
 #ChrootDirectory none
+
+# synch with OpenSSH 5.1 default
+Ciphers aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,arcfour
 
 # no default banner path
 #Banner none
