@@ -95,7 +95,7 @@ UseDNS no
 #PermitTunnel no
 #ChrootDirectory none
 
-# synch with OpenSSH 5.1 default
+# drop aes*-cbc mode
 Ciphers aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,arcfour
 
 # no default banner path
