@@ -5,3 +5,5 @@
 ./usr/sbin/named-checkzone
 ./usr/sbin/nslookup
 ./usr/sbin/nsupdate
+
+./usr/bin/telnet
