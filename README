@@ -14,3 +14,7 @@ OpenBSD sysadmin shell-script & sample-config
   % make build
   % cd /
   % sudo tar czf /var/tmp/siteXX.tgz `sort -u /PATH/TO/siteXX.list`
+
+* sshd_config
+
+  Explicit DENY SETTINGS
