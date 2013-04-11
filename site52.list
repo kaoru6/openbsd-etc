@@ -1,1 +1,4 @@
 ./usr/sbin/relayd
+./usr/sbin/bgpd
+
+./usr/sbin/tftpd
