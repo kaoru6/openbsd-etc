@@ -1,0 +1,4 @@
+./usr/sbin/bgpd
+./usr/sbin/nginx
+./usr/sbin/relayd
+./usr/sbin/tftpd
