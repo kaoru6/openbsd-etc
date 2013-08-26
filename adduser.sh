@@ -5,6 +5,10 @@
 VAREMPTY=' -d /var/empty -s /sbin/nologin '
 NONEXISTENT=' -d /nonexistent -s /sbin/nologin '
 
+# from 5.2 to 5.3
+groupadd -g 102 _iscsid
+useradd -u 102 -g 102 -c 'iSCSI Daemon' ${VAREMPTY} _iscsid
+
 # from 4.7 to 4.8
 usermod -c 'Binaries Commands and Source' bin
 
