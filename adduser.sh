@@ -39,10 +39,10 @@ useradd -u 96 -g 96 -c 'rpc.rwalld' ${VAREMPTY} _rwalld
 
 
 # from 4.4 to 4.5
-groupadd -g 94 _btd
-useradd -u 94 -g 94 -c 'Bluetooth Daemon' ${VAREMPTY} _btd
+###groupadd -g 94 _btd
+###useradd -u 94 -g 94 -c 'Bluetooth Daemon' ${VAREMPTY} _btd
 
-usermod -c 'Unprivileged user for NFS' nobody
+###usermod -c 'Unprivileged user for NFS' nobody
 
 # from 4.3 to 4.4
 groupadd -g 92 _rtadvd
@@ -65,7 +65,7 @@ exit 0;
 usermod -c 'POP3 Server' popa3d
 usermod -c 'X Server' _x11
 usermod -c 'Spam Daemon' _spamd
-usermod -c 'Kerberos Admin Server' _kadmin
+###usermod -c 'Kerberos Admin Server' _kadmin
 usermod -c 'HTTP Server' www
 usermod -c 'BGP Daemon' _bgpd
 usermod -c 'tcpdump privsep' _tcpdump
@@ -100,7 +100,7 @@ groupadd -g 77 _dhcp
 groupadd -g 78 _mopd
 groupadd -g 79 _tftpd
 groupadd -g 80 _rbootd
-groupadd -g 81 _afs
+###groupadd -g 81 _afs
 groupadd -g 82 _ppp
 groupadd -g 83 _ntp
 
@@ -108,7 +108,7 @@ useradd -u 77 -g 77 -c 'DHCP programs' ${VAREMPTY} _dhcp
 useradd -u 78 -g 78 -c 'MOP Daemon' ${VAREMPTY} _mopd
 useradd -u 79 -g 79 -c 'TFTP Daemon' ${VAREMPTY} _tftpd
 useradd -u 80 -g 80 -c 'rbootd Daemon' ${VAREMPTY} _rbootd
-useradd -u 81 -g 81 -c 'afs Daemon' ${VAREMPTY} _afs
+###useradd -u 81 -g 81 -c 'afs Daemon' ${VAREMPTY} _afs
 useradd -u 82 -g 82 -c 'PPP utilities' ${VAREMPTY} _ppp
 useradd -u 83 -g 83 -c 'NTP Daemon' ${VAREMPTY} _ntp
 
@@ -125,12 +125,12 @@ useradd -u 76 -g 76 -c 'tcpdump privsep' ${VAREMPTY} _tcpdump
 
 # from 3.3 to 3.4
 groupadd -g 68	_isakmpd
-groupadd -g 59	_kdc
-groupadd -g 60	_kadmin
+###groupadd -g 59	_kdc
+###groupadd -g 60	_kadmin
 groupadd -g 73	_syslogd
 
-useradd -u 59 -g _kdc -c 'Kerberos Server' ${VAREMPTY} _kdc
-useradd -u 60 -g _kadmin -c 'Kerberos Admin Server' ${VAREMPTY} _kadmin
+###useradd -u 59 -g _kdc -c 'Kerberos Server' ${VAREMPTY} _kdc
+###useradd -u 60 -g _kadmin -c 'Kerberos Admin Server' ${VAREMPTY} _kadmin
 useradd -u 68 -g _isakmpd -c 'isakmpd privsep' ${VAREMPTY} _isakmpd
 useradd -u 73 -g _syslogd -c 'Syslog Daemon' ${VAREMPTY} _syslogd
 
