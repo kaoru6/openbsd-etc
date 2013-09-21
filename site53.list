@@ -2,3 +2,4 @@
 ./usr/sbin/nginx
 ./usr/sbin/relayd
 ./usr/sbin/tftpd
+./usr/sbin/npppd

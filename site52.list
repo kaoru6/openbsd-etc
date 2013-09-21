@@ -1,4 +1,10 @@
 ./usr/sbin/relayd
-./usr/sbin/bgpd
+./usr/lib/libssl.a
+./usr/lib/libssl_p.a
+./usr/lib/libssl.so.16.0
 
 ./usr/sbin/tftpd
+./usr/sbin/bgpd
+./usr/sbin/nginx
+
+./usr/sbin/npppd
